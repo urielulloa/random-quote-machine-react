@@ -5,33 +5,6 @@ const tweetIntent = "https://twitter.com/intent/tweet?text=";
 import React from "react";
 import ReactDOM from "react-dom";
 
-class TwitterButton extends React.Component {
-  constructor(props) {
-    super(props);
-    this.state = {
-      quote: this.props.quote,
-      author: this.props.author
-    };
-    this.createTweetURI = this.createTweetURI.bind(this);
-  }
-  createTweetURI() {
-    return (
-      tweetIntent +
-      encodeURIComponent(
-        '"' + this.state.quote + '"' + "- " + this.state.author
-      )
-    );
-  }
-  render() {
-    const tweetLink = this.createTweetURI();
-    return (
-      <a class="twitter-share-button" href={tweetLink}>
-        Tweet
-      </a>
-    );
-  }
-}
-
 class App extends React.Component {
   constructor(props) {
     super(props);
@@ -101,7 +74,7 @@ class App extends React.Component {
           Get random quote
         </button>
         <br />
-        <a class="twitter-share-button" href={this.state.tweetLink}>
+        <a className="twitter-share-button" href={this.state.tweetLink}>
           Tweet
         </a>
       </div>

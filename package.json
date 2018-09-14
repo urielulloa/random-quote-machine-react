@@ -1,7 +1,7 @@
 {
-  "name": "new",
+  "name": "random-quote-machine-react",
   "version": "1.0.0",
-  "description": "",
+  "description": "A simple React application for dynamically displaying random famous quotes.",
   "keywords": [],
   "main": "src/index.js",
   "dependencies": {
