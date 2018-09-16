@@ -1,4 +1,97 @@
-.App {
-  font-family: sans-serif;
+* {
+  background-color: #674172;
+}
+
+div {
+  margin-left: auto;
+  margin-right: auto;
+  width: 450px;
+  margin: 8% auto auto auto;
+}
+.quote-box {
+  background-color: white;
+  border-radius: 3px;
+  position: relative;
+  padding: 5px 50px 50px 50px;
+  display: table;
+}
+.quotation {
+  color: #674172;
+  background-color: white;
+  font-size: 1.75em;
+  margin: 0 auto;
+  quotes: "\201C" "\201D" "\2018" "\2019";
+  line-height: 1.4;
   text-align: center;
+}
+
+.quotation:before {
+  content: open-quote;
+  display: inline;
+  line-height: 0;
+  left: -10px;
+  position: relative;
+  top: 30px;
+  color: #674172;
+  font-size: 2.5em;
+}
+.quotation::after {
+  content: close-quote;
+  display: inline;
+  line-height: 0;
+  left: 10px;
+  position: relative;
+  top: 35px;
+  color: #674172;
+  font-size: 2.5em;
+}
+.author {
+  color: #674172;
+  background-color: white;
+  margin: 0;
+  text-align: right;
+  font-size: 1.4em;
+  font-style: italic;
+  padding-top: 0.3em;
+}
+.new-quote {
+  margin: auto;
+  float: right;
+  border-radius: 3px;
+  background-color: #674172;
+  color: white;
+  padding: 6px 16px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 1em;
+}
+
+.twitter-share-button {
+  margin: auto;
+  border-radius: 3px;
+  color: white;
+  background-color: #674172;
+  float: left;
+  padding: 6px 16px;
+  text-align: center;
+  font-size: 1em;
+}
+
+i {
+  background-color: #674172;
+}
+
+.footer {
+  width: 450px;
+  text-align: center;
+  display: block;
+  margin: 10px 50px 50px 50px;
+  font-size: 0.8em;
+  color: white;
+}
+
+a {
+  font-weight: 500;
+  text-decoration: none;
+  color: white;
 }
